@@ -1,0 +1,1066 @@
+{
+  "metadata": {
+    "id": "71f3ba94-8ff5-4104-9859-69beca3a0d60",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-08T12:07:34Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "Tables\u0026Files\u0026Folders",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [
+      "alias:bot-Beta-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "CSV files",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "5660aa0c-617c-4d34-808b-24d073b4532d",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "ui:expanded",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Table to CSV",
+            "type": "TableToExcelCsv",
+            "version": "2.1.0",
+            "actionId": "e0a29134-fe0d-495d-bfa9-0a25892c1e26",
+            "actionDefinitionActionId": "2f6cfe20-76ef-4e2e-bacc-fc2e6433ea5a",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "table",
+                "type": "TableV3",
+                "value": "\u0022\u00A3\u00A3!48f72dc8-66ed-4208-9965-657340c5e5a2:table\u00A3\u00A3\u0022"
+              },
+              {
+                "key": "fileType",
+                "type": "String",
+                "value": "\u0022csv\u0022"
+              },
+              {
+                "key": "workbook",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/testCSV.csv\u0022"
+              },
+              {
+                "key": "header",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "index",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failIfNoData",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": [
+              {
+                "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+                "variableName": "table"
+              }
+            ]
+          },
+          {
+            "name": "Get Info of CSV",
+            "type": "DataFileGetInfo",
+            "version": "1.0.1",
+            "actionId": "6c3c3d2a-79e9-461e-b64a-e081ffd8d6df",
+            "actionDefinitionActionId": "ed5231bf-8210-438e-9bf9-527ea5035a96",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "path",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/testCSV.csv\u0022"
+              },
+              {
+                "key": "failIfNotExists",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "CSV to Table",
+            "type": "ExcelReadSheetV2",
+            "version": "2.0.4",
+            "actionId": "e2134ca1-1f17-4dee-8993-4e0e990c9e52",
+            "actionDefinitionActionId": "b000e8ae-2042-4a09-b4fb-14521844bbf9",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "tableName",
+                "type": "String",
+                "value": "\u0022test\u0022"
+              },
+              {
+                "key": "fileType",
+                "type": "String",
+                "value": "\u0022csv\u0022"
+              },
+              {
+                "key": "workbook",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/testCSV.csv\u0022"
+              },
+              {
+                "key": "header",
+                "type": "Number",
+                "value": "0"
+              },
+              {
+                "key": "noDataError",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "redacted",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Delete File",
+            "type": "DeleteFiles",
+            "version": "1.0.1",
+            "actionId": "e0278fc0-67a7-40a9-8cd5-20dc2248885d",
+            "actionDefinitionActionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "source",
+                "type": "String",
+                "value": "\u0022$$e0a29134-fe0d-495d-bfa9-0a25892c1e26:filePath$$\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "XLSX",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "f0991b49-1751-43dd-941e-7a206b70a64a",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "ui:expanded",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Table to XLSX",
+            "type": "TableToExcelCsv",
+            "version": "2.1.0",
+            "actionId": "ae496e22-c019-4654-ba6b-500743270322",
+            "actionDefinitionActionId": "2f6cfe20-76ef-4e2e-bacc-fc2e6433ea5a",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "table",
+                "type": "TableV3",
+                "value": "\u0022\u00A3\u00A3!48f72dc8-66ed-4208-9965-657340c5e5a2:table\u00A3\u00A3\u0022"
+              },
+              {
+                "key": "fileType",
+                "type": "String",
+                "value": "\u0022xlsx\u0022"
+              },
+              {
+                "key": "workbook",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/testExcel.xlsx\u0022"
+              },
+              {
+                "key": "header",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "index",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "sheet",
+                "type": "String",
+                "value": "\u0022firstSheet\u0022"
+              },
+              {
+                "key": "startColumn",
+                "type": "String",
+                "value": "\u0022A\u0022"
+              },
+              {
+                "key": "startRow",
+                "type": "Number",
+                "value": "0"
+              },
+              {
+                "key": "failIfNoData",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": [
+              {
+                "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+                "variableName": "table"
+              }
+            ]
+          },
+          {
+            "name": "Get Info of XLSX",
+            "type": "DataFileGetInfo",
+            "version": "1.0.1",
+            "actionId": "98100a96-b810-4e53-84ba-1ed29d1ebb21",
+            "actionDefinitionActionId": "ed5231bf-8210-438e-9bf9-527ea5035a96",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "path",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/testExcel.xlsx\u0022"
+              },
+              {
+                "key": "failIfNotExists",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "XLSX to Table",
+            "type": "ExcelReadSheetV2",
+            "version": "2.0.4",
+            "actionId": "da98895c-3324-45a6-9f4f-177e3148faee",
+            "actionDefinitionActionId": "b000e8ae-2042-4a09-b4fb-14521844bbf9",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "tableName",
+                "type": "String",
+                "value": "\u0022test\u0022"
+              },
+              {
+                "key": "fileType",
+                "type": "String",
+                "value": "\u0022xlsx\u0022"
+              },
+              {
+                "key": "workbook",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/testExcel.xlsx\u0022"
+              },
+              {
+                "key": "sheet",
+                "type": "String",
+                "value": "\u0022firstSheet\u0022"
+              },
+              {
+                "key": "header",
+                "type": "Number",
+                "value": "0"
+              },
+              {
+                "key": "noDataError",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "redacted",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Set Datastore Variable",
+            "type": "SetDatastoreVariable",
+            "version": "2.1.4",
+            "actionId": "d808af93-8a4c-4996-a9c9-db34f18aa913",
+            "actionDefinitionActionId": "c1448ccd-7722-4dab-babc-657a8b4563c3",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "dataStoreId",
+                "type": "String",
+                "value": "\u002248f72dc8-66ed-4208-9965-657340c5e5a2\u0022"
+              },
+              {
+                "key": "variable",
+                "type": "String",
+                "value": "\u0022table_from_action\u0022"
+              },
+              {
+                "key": "variableType",
+                "type": "String",
+                "value": "\u0022Table\u0022"
+              },
+              {
+                "key": "data",
+                "type": "TableV3",
+                "value": "\u0022$$da98895c-3324-45a6-9f4f-177e3148faee:test$$\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": [
+              {
+                "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2"
+              }
+            ]
+          },
+          {
+            "name": "Delete File",
+            "type": "DeleteFiles",
+            "version": "1.0.1",
+            "actionId": "ccf6cc15-2a82-4b07-9e89-e6cdb26725be",
+            "actionDefinitionActionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "source",
+                "type": "String",
+                "value": "\u0022$$ae496e22-c019-4654-ba6b-500743270322:filePath$$\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "File Conversion CSV to Excel",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "33283ca7-3b64-4203-a7ce-ea2648c8f72f",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Set Variable",
+            "type": "VariableSetV2",
+            "version": "1.1.2",
+            "actionId": "8db94bf7-ccb4-4027-8060-225338d6abf5",
+            "actionDefinitionActionId": "32b3480c-118e-42ce-99dd-1c25aa93d742",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "variable",
+                "type": "String",
+                "value": "\u0022col_list\u0022"
+              },
+              {
+                "key": "variableType",
+                "type": "String",
+                "value": "\u0022Array\u0022"
+              },
+              {
+                "key": "delimeter",
+                "type": "String",
+                "value": "\u0022,\u0022"
+              },
+              {
+                "key": "data",
+                "type": "String",
+                "value": "\u0022test\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "redacted",
+                "type": "Boolean",
+                "value": "false"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [
+              {
+                "actionId": "8db94bf7-ccb4-4027-8060-225338d6abf5",
+                "actionResult": "8db94bf7-ccb4-4027-8060-225338d6abf5:col_list",
+                "variableName": "col_list",
+                "type": "Array"
+              }
+            ],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Download File",
+            "type": "DownloadFile",
+            "version": "2.0.2",
+            "actionId": "f42da485-8445-412b-a6fe-08229482f984",
+            "actionDefinitionActionId": "bbbe54ee-9973-4bb0-9942-dbfabc08a4d8",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "objectStoreId",
+                "type": "File",
+                "value": "\u0022\u00A3\u00A348f72dc8-66ed-4208-9965-657340c5e5a2:download_20240809_08_44_18\u00A3\u00A3\u0022"
+              },
+              {
+                "key": "downloadPath",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": [
+              {
+                "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+                "variableName": "download_20240809_08_44_18"
+              }
+            ]
+          },
+          {
+            "name": "File Conversion",
+            "type": "FileConversion",
+            "version": "1.0.1",
+            "actionId": "9aa07f22-2b1d-4c9d-8c1d-25176d302b35",
+            "actionDefinitionActionId": "c25c5818-1ba4-4e2d-a38d-040ee1d30bca",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "directory",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop\u0022"
+              },
+              {
+                "key": "filename",
+                "type": "String",
+                "value": "\u0022download_20240809_08_44_18\u0022"
+              },
+              {
+                "key": "conversion",
+                "type": "String",
+                "value": "\u00220\u0022"
+              },
+              {
+                "key": "headers",
+                "type": "Number",
+                "value": "0"
+              },
+              {
+                "key": "columns",
+                "type": "String",
+                "value": "\u0022$$col_list$$\u0022"
+              },
+              {
+                "key": "destination",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop\u0022"
+              },
+              {
+                "key": "newFilename",
+                "type": "String",
+                "value": "\u0022download_20240809_08_44_18\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Delete File",
+            "type": "DeleteFiles",
+            "version": "1.0.1",
+            "actionId": "e7e23386-38e6-483e-98c9-32fdb7532869",
+            "actionDefinitionActionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "source",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/download_20240809_08_44_18\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "File Conversion Excel to CSV",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "bdb6801b-8433-4b77-ac69-e2edc2805ebe",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Download File",
+            "type": "DownloadFile",
+            "version": "2.0.2",
+            "actionId": "b7dea6c7-f573-47d7-afc1-00851fb91b18",
+            "actionDefinitionActionId": "bbbe54ee-9973-4bb0-9942-dbfabc08a4d8",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "objectStoreId",
+                "type": "File",
+                "value": "\u0022\u00A3\u00A348f72dc8-66ed-4208-9965-657340c5e5a2:example\u00A3\u00A3\u0022"
+              },
+              {
+                "key": "downloadPath",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": [
+              {
+                "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+                "variableName": "example"
+              }
+            ]
+          },
+          {
+            "name": "File Conversion",
+            "type": "FileConversion",
+            "version": "1.0.1",
+            "actionId": "ffb20d5d-646d-407e-aed3-46392e29c6df",
+            "actionDefinitionActionId": "c25c5818-1ba4-4e2d-a38d-040ee1d30bca",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "directory",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop\u0022"
+              },
+              {
+                "key": "filename",
+                "type": "String",
+                "value": "\u0022example\u0022"
+              },
+              {
+                "key": "conversion",
+                "type": "String",
+                "value": "\u00221\u0022"
+              },
+              {
+                "key": "headers",
+                "type": "Number",
+                "value": "1"
+              },
+              {
+                "key": "columns",
+                "type": "String",
+                "value": "\u00223\u0022"
+              },
+              {
+                "key": "destination",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop\u0022"
+              },
+              {
+                "key": "newFilename",
+                "type": "String",
+                "value": "\u0022example\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Delete File",
+            "type": "DeleteFiles",
+            "version": "1.0.1",
+            "actionId": "e22eafea-8cee-4d52-ac7b-f9e1174bacc3",
+            "actionDefinitionActionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "source",
+                "type": "String",
+                "value": "\u0022/home/tocabot/Desktop/example\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [
+      {
+        "actionId": "8db94bf7-ccb4-4027-8060-225338d6abf5",
+        "actionResult": "8db94bf7-ccb4-4027-8060-225338d6abf5:col_list",
+        "variableName": "col_list",
+        "type": "Array"
+      }
+    ],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "71f3ba94-8ff5-4104-9859-69beca3a0d60",
+    "name": "Tables\u0026Files\u0026Folders"
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "metadata": {
+    "id": "570b5aa6-d8f5-456a-a29f-4b15855a50d5",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-08T12:22:55Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "Pdf",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [
+      "alias:bot-Beta-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Download File",
+        "type": "DownloadFile",
+        "version": "2.0.2",
+        "actionId": "5b1db764-0b87-4cc1-bbf0-bcaba2d6164b",
+        "actionDefinitionActionId": "bbbe54ee-9973-4bb0-9942-dbfabc08a4d8",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "objectStoreId",
+            "type": "File",
+            "value": "\u0022\u00A3\u00A348f72dc8-66ed-4208-9965-657340c5e5a2:pdf1\u00A3\u00A3\u0022"
+          },
+          {
+            "key": "downloadPath",
+            "type": "String",
+            "value": "\u0022/home/tocabot/Desktop/pdf1\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": [
+          {
+            "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+            "variableName": "pdf1"
+          }
+        ]
+      },
+      {
+        "name": "Download File",
+        "type": "DownloadFile",
+        "version": "2.0.2",
+        "actionId": "b1046565-d2e4-4a7d-ae28-2414717ebd2a",
+        "actionDefinitionActionId": "bbbe54ee-9973-4bb0-9942-dbfabc08a4d8",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "objectStoreId",
+            "type": "File",
+            "value": "\u0022\u00A3\u00A348f72dc8-66ed-4208-9965-657340c5e5a2:pdf2\u00A3\u00A3\u0022"
+          },
+          {
+            "key": "downloadPath",
+            "type": "String",
+            "value": "\u0022/home/tocabot/Desktop/pdf2\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": [
+          {
+            "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+            "variableName": "pdf2"
+          }
+        ]
+      },
+      {
+        "name": "Merge PDF",
+        "type": "MergePDF",
+        "version": "1.0.1",
+        "actionId": "b4a8d461-2a7d-43f3-8293-13cbd891cc81",
+        "actionDefinitionActionId": "8dd7036e-7721-458f-ad15-c17b02c8d43a",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "files",
+            "type": "Array",
+            "value": "[{\u0022type\u0022:\u0022string\u0022,\u0022key\u0022:\u00229c63ef3c-ad2c-4c21-aadc-b8804e9d7222\u0022,\u0022value\u0022:\u0022/home/tocabot/Desktop/pdf1\u0022},{\u0022type\u0022:\u0022string\u0022,\u0022key\u0022:\u00226b20340e-f040-4e48-958f-8574820993c0\u0022,\u0022value\u0022:\u0022/home/tocabot/Desktop/pdf2\u0022}]"
+          },
+          {
+            "key": "destinationFile",
+            "type": "String",
+            "value": "\u0022/home/tocabot/Desktop/pdf3\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Extract Text From PDF",
+        "type": "ExtractTextFromPDF",
+        "version": "1.0.1",
+        "actionId": "a757858b-ba3a-4d61-a86f-59cbea8527d8",
+        "actionDefinitionActionId": "dcab55f9-e24b-4d82-9164-c2a7dc51284f",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "fileToExtract",
+            "type": "String",
+            "value": "\u0022/home/tocabot/Desktop/pdf1\u0022"
+          },
+          {
+            "key": "errorOnNoText",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Delete File",
+        "type": "DeleteFiles",
+        "version": "1.0.1",
+        "actionId": "2524a74d-91eb-42e5-bcc5-dc8de4f2dd59",
+        "actionDefinitionActionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "source",
+            "type": "String",
+            "value": "\u0022/home/tocabot/Desktop/pdf1\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Delete File",
+        "type": "DeleteFiles",
+        "version": "1.0.1",
+        "actionId": "6b174fd8-5e90-4d67-a310-4678888a4099",
+        "actionDefinitionActionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "source",
+            "type": "String",
+            "value": "\u0022/home/tocabot/Desktop/pdf2\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "datastoreReferences": [
+      {
+        "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+        "variableName": "pdf1"
+      }
+    ],
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "570b5aa6-d8f5-456a-a29f-4b15855a50d5",
+    "name": "PDF"
+  }
+}

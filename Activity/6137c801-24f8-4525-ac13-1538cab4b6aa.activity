@@ -1,0 +1,899 @@
+{
+  "metadata": {
+    "id": "6137c801-24f8-4525-ac13-1538cab4b6aa",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-08T08:56:07Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "Browser",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [
+      "alias:bot-Beta-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Open Browser",
+        "type": "BrowserCombo",
+        "version": "1.0.5",
+        "actionId": "034c4f4b-eccf-4521-b3d7-63a74506648d",
+        "actionDefinitionActionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserType",
+            "type": "String",
+            "value": "\u0022Chrome\u0022"
+          },
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://www.google.com\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "maximize",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "extension",
+            "type": "String",
+            "value": "\u0022\u0022"
+          },
+          {
+            "key": "alertManagement",
+            "type": "String",
+            "value": "\u0022accept\u0022"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Go to URL in Browser",
+        "type": "BrowserGotoURL",
+        "version": "1.0.3",
+        "actionId": "df5dc421-93cb-4abd-b138-473b7de9aaea",
+        "actionDefinitionActionId": "1e5bdeed-5b17-4f60-8541-b21a7ef2caf6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://www.hl.co.uk/shares/stock-market-summary/ftse-100\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Go Forward or Back in Browser",
+        "type": "BrowserNavigate",
+        "version": "1.0.3",
+        "actionId": "7325611a-6990-4f5f-beaa-83aa7d6624e2",
+        "actionDefinitionActionId": "01ea1fa1-1910-4498-a153-6ee186e4dc18",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "direction",
+            "type": "String",
+            "value": "\u0022back\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Go Forward or Back in Browser",
+        "type": "BrowserNavigate",
+        "version": "1.0.3",
+        "actionId": "dabe4306-2315-4acc-848b-da367292577f",
+        "actionDefinitionActionId": "01ea1fa1-1910-4498-a153-6ee186e4dc18",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "direction",
+            "type": "String",
+            "value": "\u0022forward\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Manipulate Browser Window",
+        "type": "BrowserWindow",
+        "version": "1.0.2",
+        "actionId": "56690a8a-b0d5-4d32-8e31-c85d4f8d0636",
+        "actionDefinitionActionId": "61d8d4ac-bf9c-415c-8009-6245c6289505",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAction",
+            "type": "String",
+            "value": "\u0022minimize_window\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Manipulate Browser Window",
+        "type": "BrowserWindow",
+        "version": "1.0.2",
+        "actionId": "124fb4ba-6c36-41c9-bc6c-74c2cbbfb7b0",
+        "actionDefinitionActionId": "61d8d4ac-bf9c-415c-8009-6245c6289505",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAction",
+            "type": "String",
+            "value": "\u0022maximize_window\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Get Web Element",
+        "type": "GetWebElementsV2",
+        "version": "1.0.6",
+        "actionId": "048ddcbd-a09f-4ad2-8fc5-e277fb1a6319",
+        "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "xpathTag",
+            "type": "String",
+            "value": "\u0022button\u0022"
+          },
+          {
+            "key": "xpathImage",
+            "type": "Image",
+            "value": "\u0022057109b7-7fb0-4bbc-b8db-aa33931575e4\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "xpath",
+            "type": "String",
+            "value": "\u0022/html/body/div[3]/div/div/div[1]/div[2]/button\u0022"
+          },
+          {
+            "key": "interaction",
+            "type": "String",
+            "value": "\u0022click\u0022"
+          },
+          {
+            "key": "retryCount",
+            "type": "Number",
+            "value": "0"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Get Web Element Property",
+        "type": "GetWebElementProperty",
+        "version": "0.0.3",
+        "actionId": "1ff18e88-65a7-4a89-bf4a-fc60abdfb798",
+        "actionDefinitionActionId": "d38eb528-d9d5-44b1-9f87-f25fb77fe791",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "xpathTag",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "xpathImage",
+            "type": "Image",
+            "value": "\u00225a0ae704-1c3e-44ec-9c79-d9aa9bec151b\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "xpath",
+            "type": "String",
+            "value": "\u0022/html/body/header/div[4]/div[1]/div[2]/div/div/a[4]\u0022"
+          },
+          {
+            "key": "propertyName",
+            "type": "String",
+            "value": "\u0022\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "null"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Open Browser",
+        "type": "BrowserCombo",
+        "version": "1.0.5",
+        "actionId": "1e528cd9-e7d6-434f-ab69-0e16caa426c2",
+        "actionDefinitionActionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserType",
+            "type": "String",
+            "value": "\u0022Chrome\u0022"
+          },
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://google.com\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022b\u0022"
+          },
+          {
+            "key": "maximize",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "extension",
+            "type": "String",
+            "value": "\u0022\u0022"
+          },
+          {
+            "key": "alertManagement",
+            "type": "String",
+            "value": "\u0022accept\u0022"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Focus Browser",
+        "type": "FocusBrowser",
+        "version": "1.0.1",
+        "actionId": "48e31f33-64a3-446f-b002-7cc6df4bee20",
+        "actionDefinitionActionId": "a4b4eb3e-a46d-4cdb-9bbb-e2d7564ba581",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "-1"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Find Repeating Elements",
+        "type": "GetRepeatedElement",
+        "version": "1.0.3",
+        "actionId": "b5cbb055-eb3a-486a-b04f-9a9181cd6a56",
+        "actionDefinitionActionId": "f14ff0cc-5492-4dbd-bf92-b1528fefda2d",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "xpathATag",
+            "type": "String",
+            "value": "\u0022p\u0022"
+          },
+          {
+            "key": "xpathAImage",
+            "type": "Image",
+            "value": "\u00222dd024d3-cb57-45c4-afae-71c299035e83\u0022"
+          },
+          {
+            "key": "xpathBTag",
+            "type": "String",
+            "value": "\u0022p\u0022"
+          },
+          {
+            "key": "xpathBImage",
+            "type": "Image",
+            "value": "\u002279a8ff0f-c199-4c8d-9521-16318141ffd5\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "xpathA",
+            "type": "String",
+            "value": "\u0022/html/body/main/div/div/div[3]/div/div[2]/div/div/div/div/div[2]/p[2]\u0022"
+          },
+          {
+            "key": "xpathB",
+            "type": "String",
+            "value": "\u0022/html/body/main/div/div/div[3]/div/div[2]/div/div/div/div/div[2]/p[1]\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Close Browser",
+        "type": "BrowserClose",
+        "version": "1.0.2",
+        "actionId": "8d6f4373-a46a-4a1c-adc6-8bb9cec75a9e",
+        "actionDefinitionActionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022b\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Go to URL in Browser",
+        "type": "BrowserGotoURL",
+        "version": "1.0.3",
+        "actionId": "8147169b-59e1-4326-9450-4171d275ecd4",
+        "actionDefinitionActionId": "1e5bdeed-5b17-4f60-8541-b21a7ef2caf6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://apastyle.apa.org/style-grammar-guidelines/tables-figures/sample-tables\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Repeating Elements to Table",
+        "type": "RepeatingElementsToTable",
+        "version": "2.0.2",
+        "actionId": "9a24627e-ba0c-43ef-811c-b0abd1fc36bc",
+        "actionDefinitionActionId": "7fb51f17-a365-43ce-82a7-5d3e54b21b58",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "elementInfo",
+            "type": "String",
+            "value": "\u0022{\\\u0022path\\\u0022:\\\u0022/html/body/div[2]/div[1]/div[1]/main/section[1]/div/div[2]/div[1]/div[5]/div\\\u0022,\\\u0022columns\\\u0022:[{\\\u0022column\\\u0022:\\\u0022test\\\u0022,\\\u0022path\\\u0022:\\\u0022/table/tbody/tr[20]/td[2]\\\u0022,\\\u0022property\\\u0022:\\\u0022text\\\u0022}]}\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Close Browser",
+        "type": "BrowserClose",
+        "version": "1.0.2",
+        "actionId": "7b0f37ab-66f7-499c-a275-08e3468d5f9b",
+        "actionDefinitionActionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "6137c801-24f8-4525-ac13-1538cab4b6aa",
+    "name": "Browser"
+  }
+}

@@ -1,0 +1,1490 @@
+{
+  "metadata": {
+    "id": "2e9ef445-a070-4105-b253-2bb84a6ce1e7",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-08T11:04:23Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "paste password\u0026Vision\u0026OCR",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [
+      "alias:bot-Beta-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Login",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "354765bf-94bc-4d63-b9a1-03e90827bbc4",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Open Browser",
+            "type": "BrowserCombo",
+            "version": "1.0.5",
+            "actionId": "d27bbd71-34c3-49f4-bc56-b24cb4976858",
+            "actionDefinitionActionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "browserType",
+                "type": "String",
+                "value": "\u0022Chrome\u0022"
+              },
+              {
+                "key": "url",
+                "type": "String",
+                "value": "\u0022https://apps.beta.toca.io/login-user-pass-test/login\u0022"
+              },
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "maximize",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "focusBrowser",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "continueWithoutWait",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "extension",
+                "type": "String",
+                "value": "\u0022\u0022"
+              },
+              {
+                "key": "alertManagement",
+                "type": "String",
+                "value": "\u0022accept\u0022"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Get Web Element",
+            "type": "GetWebElementsV2",
+            "version": "1.0.6",
+            "actionId": "acefac34-931e-4428-a20b-50cc5473ed24",
+            "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "xpathTag",
+                "type": "String",
+                "value": "\u0022input\u0022"
+              },
+              {
+                "key": "xpathImage",
+                "type": "Image",
+                "value": "\u0022f48db321-5c71-436a-83ac-a195a9101026\u0022"
+              },
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "xpath",
+                "type": "String",
+                "value": "\u0022/html/body/app-root/div[1]/div/div/div/div/div/div/div[3]/form/div/div/div[2]/div/div/input\u0022"
+              },
+              {
+                "key": "interaction",
+                "type": "String",
+                "value": "\u0022click\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Paste Password",
+            "type": "PastePassword",
+            "version": "1.0.2",
+            "actionId": "ede2d716-6b22-438d-a949-b672d681d847",
+            "actionDefinitionActionId": "6b0b0fd2-3324-4e1b-81c9-084f3445ae42",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "pointer",
+                "type": "Password",
+                "value": "\u0022\u00A3\u00A348f72dc8-66ed-4208-9965-657340c5e5a2:paswword\u00A3\u00A3\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": [
+              {
+                "datastoreId": "48f72dc8-66ed-4208-9965-657340c5e5a2",
+                "variableName": "paswword"
+              }
+            ]
+          },
+          {
+            "name": "Get Web Element",
+            "type": "GetWebElementsV2",
+            "version": "1.0.6",
+            "actionId": "5337ebb6-526b-407b-846e-3db1b1d856da",
+            "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "xpathTag",
+                "type": "String",
+                "value": "\u0022input\u0022"
+              },
+              {
+                "key": "xpathImage",
+                "type": "Image",
+                "value": "\u0022b394f266-d505-42ef-8023-bfdb33d95bf8\u0022"
+              },
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "xpath",
+                "type": "String",
+                "value": "\u0022/html/body/app-root/div[1]/div/div/div/div/div/div/div[3]/form/div/div/div[1]/div/div/input\u0022"
+              },
+              {
+                "key": "interaction",
+                "type": "String",
+                "value": "\u0022click\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Clipboard Paste",
+            "type": "ClipboardPaste",
+            "version": "1.0.3",
+            "actionId": "2b0979a0-0d08-4a59-b8ad-19d407baebd4",
+            "actionDefinitionActionId": "2e6086d8-1d33-443f-b344-eb4eed5b71da",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "textToPaste",
+                "type": "String",
+                "value": "\u0022test\u0022"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Get Web Element",
+            "type": "GetWebElementsV2",
+            "version": "1.0.6",
+            "actionId": "9c7bc548-c74b-4544-9741-8263cc2411a5",
+            "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "xpathTag",
+                "type": "String",
+                "value": "\u0022button\u0022"
+              },
+              {
+                "key": "xpathImage",
+                "type": "Image",
+                "value": "\u002277f44acd-fbe6-47be-bee3-c20902492fe9\u0022"
+              },
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "xpath",
+                "type": "String",
+                "value": "\u0022/html/body/app-root/div[1]/div/div/div/div/div/div/div[3]/form/div/div/div[3]/div/button\u0022"
+              },
+              {
+                "key": "interaction",
+                "type": "String",
+                "value": "\u0022click\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Vision",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "5b9b9971-a0b7-4865-8372-108755210a33",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "ui:expanded",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Get Web Element",
+            "type": "GetWebElementsV2",
+            "version": "1.0.6",
+            "actionId": "1ba16ede-5724-4c5b-b329-64eb9afde901",
+            "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "xpathTag",
+                "type": "String",
+                "value": "\u0022button\u0022"
+              },
+              {
+                "key": "xpathImage",
+                "type": "Image",
+                "value": "\u0022e026ff36-a4ea-42ef-b8dc-516febb75411\u0022"
+              },
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "xpath",
+                "type": "String",
+                "value": "\u0022/html/body/app-root/div[1]/div[2]/div/div[1]/button\u0022"
+              },
+              {
+                "key": "interaction",
+                "type": "String",
+                "value": "\u0022click\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Image Change",
+            "type": "ImageChange",
+            "version": "1.0.1",
+            "actionId": "99149404-d1dd-401b-8f7c-944f4065da4d",
+            "actionDefinitionActionId": "e820f69e-2a2f-427c-9099-4ed1381a78fe",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "regionAreaImage",
+                "type": "Image",
+                "value": "\u002247948c8a-2b36-47da-bec2-e350ebb7f7bf\u0022"
+              },
+              {
+                "key": "interval",
+                "type": "Number",
+                "value": "5000"
+              },
+              {
+                "key": "regionArea",
+                "type": "BoundingBox",
+                "value": "{\u0022x\u0022:242,\u0022y\u0022:278,\u0022w\u0022:509,\u0022h\u0022:425}"
+              },
+              {
+                "key": "ifChanged",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Image Do While",
+            "type": "ImageDoWhile",
+            "version": "1.0.6",
+            "actionId": "56c12747-d0f6-46a1-9156-e158f84f2f71",
+            "actionDefinitionActionId": "1b9e376f-31c5-4c33-8f0a-fc121d8db414",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "imgBox",
+                "type": "BoundingBox",
+                "value": "{\u0022x\u0022:247,\u0022y\u0022:280,\u0022w\u0022:287,\u0022h\u0022:217}"
+              },
+              {
+                "key": "img",
+                "type": "Image",
+                "value": "\u0022213c693f-8e6b-41e7-96ee-fb9cab30892a\u0022"
+              },
+              {
+                "key": "ifPresent",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "colourMatch",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "-1"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "templateThreshold",
+                "type": "Number",
+                "value": "0.9"
+              },
+              {
+                "key": "ui:expanded",
+                "type": "Boolean",
+                "value": "false"
+              }
+            ],
+            "actions": [
+              {
+                "name": "Delay",
+                "type": "Delay",
+                "version": "1.0.1",
+                "actionId": "132d37e4-cce3-41eb-b762-5df5854c9d6b",
+                "actionDefinitionActionId": "4afc0589-d3bf-49d3-80e3-240be2146dcf",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "delay",
+                    "type": "Number",
+                    "value": "3000"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  }
+                ],
+                "actions": [],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              },
+              {
+                "name": "Get Web Element",
+                "type": "GetWebElementsV2",
+                "version": "1.0.6",
+                "actionId": "f22826df-69b1-4ac3-a812-06c1e0f7fed6",
+                "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "xpathTag",
+                    "type": "String",
+                    "value": "\u0022button\u0022"
+                  },
+                  {
+                    "key": "xpathImage",
+                    "type": "Image",
+                    "value": "\u0022a3bdb7e7-4f9a-4041-a3c3-d8698ea04990\u0022"
+                  },
+                  {
+                    "key": "browserAlias",
+                    "type": "String",
+                    "value": "\u0022a\u0022"
+                  },
+                  {
+                    "key": "xpath",
+                    "type": "String",
+                    "value": "\u0022/html/body/app-root/div[1]/div[2]/div/div[1]/button\u0022"
+                  },
+                  {
+                    "key": "interaction",
+                    "type": "String",
+                    "value": "\u0022click\u0022"
+                  },
+                  {
+                    "key": "timeout",
+                    "type": "Number",
+                    "value": "30000"
+                  },
+                  {
+                    "key": "errorOnTimeout",
+                    "type": "Boolean",
+                    "value": "false"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  }
+                ],
+                "actions": [],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              },
+              {
+                "name": "Image Compare",
+                "type": "ImageCompare",
+                "version": "1.0.1",
+                "actionId": "03aaf1a0-74de-408f-9eb3-7df40c44ac78",
+                "actionDefinitionActionId": "3a48ed45-d7a7-4945-87ee-939f082c2e1c",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "sourceBox",
+                    "type": "BoundingBox",
+                    "value": "{\u0022x\u0022:252,\u0022y\u0022:292,\u0022w\u0022:332,\u0022h\u0022:331}"
+                  },
+                  {
+                    "key": "targetBox",
+                    "type": "BoundingBox",
+                    "value": "{\u0022x\u0022:252,\u0022y\u0022:292,\u0022w\u0022:332,\u0022h\u0022:331}"
+                  },
+                  {
+                    "key": "source",
+                    "type": "Image",
+                    "value": "\u0022c578e04b-b424-488a-b664-f100267f899d\u0022"
+                  },
+                  {
+                    "key": "target",
+                    "type": "Image",
+                    "value": "\u002266a38180-f0a0-4453-a3c2-0f9b1c788aa2\u0022"
+                  },
+                  {
+                    "key": "threshold",
+                    "type": "Number"
+                  },
+                  {
+                    "key": "timeout",
+                    "type": "Number",
+                    "value": "30000"
+                  },
+                  {
+                    "key": "errorOnTimeout",
+                    "type": "Boolean",
+                    "value": "true"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  }
+                ],
+                "actions": [],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              },
+              {
+                "name": "If Then",
+                "type": "IfThen",
+                "version": "1.0.4",
+                "actionId": "c992477b-3204-4afb-acc2-5cb185ff29f8",
+                "actionDefinitionActionId": "2e723326-52b3-4bd4-9caa-ed165142a394",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "expression",
+                    "type": "String",
+                    "value": "\u0022$$03aaf1a0-74de-408f-9eb3-7df40c44ac78:compareResult$$ == false\u0022"
+                  },
+                  {
+                    "key": "timeout",
+                    "type": "Number",
+                    "value": "-1"
+                  },
+                  {
+                    "key": "errorOnTimeout",
+                    "type": "Boolean",
+                    "value": "false"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  },
+                  {
+                    "key": "ui:expanded",
+                    "type": "Boolean",
+                    "value": "false"
+                  }
+                ],
+                "actions": [
+                  {
+                    "name": "Stop Execution",
+                    "type": "StopExecution",
+                    "version": "1.0.2",
+                    "actionId": "6e349195-cd61-460d-b2a1-13c27f5991c6",
+                    "actionDefinitionActionId": "d0f4c62e-02c4-4e79-8bef-01c4775e5211",
+                    "disabled": false,
+                    "created": "0001-01-01T00:00:00Z",
+                    "updated": "0001-01-01T00:00:00Z",
+                    "isDeactivated": false,
+                    "parameters": [
+                      {
+                        "key": "failAction",
+                        "type": "Boolean",
+                        "value": "true"
+                      }
+                    ],
+                    "actions": [],
+                    "context": [],
+                    "tables": [],
+                    "lists": [],
+                    "variableMappings": [],
+                    "variables": [],
+                    "results": [],
+                    "logs": [],
+                    "status": 0,
+                    "breakPoint": "None",
+                    "datastoreReferences": []
+                  }
+                ],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              }
+            ],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Image Grid",
+            "type": "ImageGrid",
+            "version": "1.0.11",
+            "actionId": "ee7171e2-269d-4f06-ac0d-32ecd5cfc205",
+            "actionDefinitionActionId": "df80e649-388c-40d2-b186-128521bc7352",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "grid",
+                "type": "Grid",
+                "value": "{\u0022position\u0022:{\u0022x\u0022:247,\u0022y\u0022:277},\u0022gridArray\u0022:[{\u0022key\u0022:\u0022(0, 0)\u0022,\u0022column\u0022:0,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:0,\u0022y\u0022:0,\u0022w\u0022:535,\u0022h\u0022:350}},{\u0022key\u0022:\u0022(1, 0)\u0022,\u0022column\u0022:1,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:535,\u0022y\u0022:0,\u0022w\u0022:535,\u0022h\u0022:350}}]}"
+              },
+              {
+                "key": "colourMatch",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "-1"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "ui:expanded",
+                "type": "Boolean",
+                "value": "false"
+              }
+            ],
+            "actions": [
+              {
+                "name": "Debug Value",
+                "type": "Debug",
+                "version": "1.0.2",
+                "actionId": "d46e271b-d04d-40c2-a5c0-ad7067f0178b",
+                "actionDefinitionActionId": "fb707467-e3b5-44da-a74f-3b6ca383791c",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "echo",
+                    "type": "String",
+                    "value": "\u0022true\u0022"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  }
+                ],
+                "actions": [],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              },
+              {
+                "name": "If Then",
+                "type": "IfThen",
+                "version": "1.0.4",
+                "actionId": "d05fe068-b7f9-44ab-a9d8-384812787a2f",
+                "actionDefinitionActionId": "2e723326-52b3-4bd4-9caa-ed165142a394",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "expression",
+                    "type": "String",
+                    "value": "\u0022\\\u0022$$d46e271b-d04d-40c2-a5c0-ad7067f0178b:value$$\\\u0022 == \\\u0022false\\\u0022\u0022"
+                  },
+                  {
+                    "key": "timeout",
+                    "type": "Number",
+                    "value": "-1"
+                  },
+                  {
+                    "key": "errorOnTimeout",
+                    "type": "Boolean",
+                    "value": "false"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  },
+                  {
+                    "key": "ui:expanded",
+                    "type": "Boolean",
+                    "value": "false"
+                  }
+                ],
+                "actions": [
+                  {
+                    "name": "Stop Execution",
+                    "type": "StopExecution",
+                    "version": "1.0.2",
+                    "actionId": "ab1a0e64-3283-47fc-8422-cab474dfa6b6",
+                    "actionDefinitionActionId": "d0f4c62e-02c4-4e79-8bef-01c4775e5211",
+                    "disabled": false,
+                    "created": "0001-01-01T00:00:00Z",
+                    "updated": "0001-01-01T00:00:00Z",
+                    "isDeactivated": false,
+                    "parameters": [
+                      {
+                        "key": "failAction",
+                        "type": "Boolean",
+                        "value": "true"
+                      }
+                    ],
+                    "actions": [],
+                    "context": [],
+                    "tables": [],
+                    "lists": [],
+                    "variableMappings": [],
+                    "variables": [],
+                    "results": [],
+                    "logs": [],
+                    "status": 0,
+                    "breakPoint": "None",
+                    "datastoreReferences": []
+                  }
+                ],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              }
+            ],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "OCR",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "095bd006-d604-4d2e-8fe3-24dae2ac4355",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "ui:expanded",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [
+          {
+            "name": "OCR Grid",
+            "type": "OcrGrid",
+            "version": "1.0.13",
+            "actionId": "e545d5c1-018b-474a-ac7b-ecb93869a226",
+            "actionDefinitionActionId": "d6c4d224-1693-4846-b4f2-b3f1cb1a3591",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "grid",
+                "type": "Grid",
+                "value": "{\u0022position\u0022:{\u0022x\u0022:223,\u0022y\u0022:639},\u0022gridArray\u0022:[{\u0022key\u0022:\u0022(0, 0)\u0022,\u0022column\u0022:0,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:0,\u0022y\u0022:0,\u0022w\u0022:369,\u0022h\u0022:68}},{\u0022key\u0022:\u0022(1, 0)\u0022,\u0022column\u0022:1,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:369,\u0022y\u0022:0,\u0022w\u0022:369,\u0022h\u0022:68}},{\u0022key\u0022:\u0022(2, 0)\u0022,\u0022column\u0022:2,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:738,\u0022y\u0022:0,\u0022w\u0022:369,\u0022h\u0022:68}}]}"
+              },
+              {
+                "key": "colourMatch",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "-1"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "thresholding",
+                "type": "String",
+                "value": "\u00220\u0022"
+              },
+              {
+                "key": "invert",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "medianBlur",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "bigger",
+                "type": "Number",
+                "value": "2"
+              },
+              {
+                "key": "digits",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "ui:expanded",
+                "type": "Boolean",
+                "value": "false"
+              }
+            ],
+            "actions": [
+              {
+                "name": "Debug Value",
+                "type": "Debug",
+                "version": "1.0.2",
+                "actionId": "63776fba-f979-445c-91db-3529d5631fd0",
+                "actionDefinitionActionId": "fb707467-e3b5-44da-a74f-3b6ca383791c",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "echo",
+                    "type": "String",
+                    "value": "\u0022$$e545d5c1-018b-474a-ac7b-ecb93869a226:text$$\u0022"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  }
+                ],
+                "actions": [],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              }
+            ],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "OCR Do While",
+            "type": "OcrDoWhile",
+            "version": "1.0.5",
+            "actionId": "b4aff0f6-117a-4c43-9489-32b39a22d47e",
+            "actionDefinitionActionId": "68ab6c6d-f09e-417c-a1d2-6530c5a270ce",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "text",
+                "type": "String",
+                "value": "\u0022One\u0022"
+              },
+              {
+                "key": "ifPresent",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "-1"
+              },
+              {
+                "key": "language",
+                "type": "String",
+                "value": "\u0022eng\u0022"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "noTextError",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              },
+              {
+                "key": "thresholding",
+                "type": "String",
+                "value": "\u00220\u0022"
+              },
+              {
+                "key": "invert",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "medianBlur",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "bigger",
+                "type": "Number",
+                "value": "2"
+              },
+              {
+                "key": "digits",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "ui:expanded",
+                "type": "Boolean",
+                "value": "false"
+              }
+            ],
+            "actions": [
+              {
+                "name": "Get Web Element",
+                "type": "GetWebElementsV2",
+                "version": "1.0.6",
+                "actionId": "0c7d1d1f-7c34-4ee0-a152-4655544e43ac",
+                "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+                "disabled": false,
+                "created": "0001-01-01T00:00:00Z",
+                "updated": "0001-01-01T00:00:00Z",
+                "isDeactivated": false,
+                "parameters": [
+                  {
+                    "key": "xpathTag",
+                    "type": "String",
+                    "value": "\u0022button\u0022"
+                  },
+                  {
+                    "key": "xpathImage",
+                    "type": "Image",
+                    "value": "\u0022339e7562-c251-40bf-adbc-ebbc82ede0c3\u0022"
+                  },
+                  {
+                    "key": "browserAlias",
+                    "type": "String",
+                    "value": "\u0022a\u0022"
+                  },
+                  {
+                    "key": "xpath",
+                    "type": "String",
+                    "value": "\u0022/html/body/app-root/div[1]/div[5]/div/div/button\u0022"
+                  },
+                  {
+                    "key": "interaction",
+                    "type": "String",
+                    "value": "\u0022click\u0022"
+                  },
+                  {
+                    "key": "timeout",
+                    "type": "Number",
+                    "value": "30000"
+                  },
+                  {
+                    "key": "errorOnTimeout",
+                    "type": "Boolean",
+                    "value": "false"
+                  },
+                  {
+                    "key": "failOnError",
+                    "type": "Boolean",
+                    "value": "true"
+                  }
+                ],
+                "actions": [],
+                "context": [],
+                "tables": [],
+                "lists": [],
+                "variableMappings": [],
+                "variables": [],
+                "results": [],
+                "logs": [],
+                "status": 0,
+                "breakPoint": "None",
+                "datastoreReferences": []
+              }
+            ],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Logout",
+        "type": "Group",
+        "version": "1.1.0",
+        "actionId": "05c0c043-ec05-4c74-a7f9-56bb7f2033d8",
+        "actionDefinitionActionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "ui:expanded",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Get Web Element",
+            "type": "GetWebElementsV2",
+            "version": "1.0.6",
+            "actionId": "3399aace-ee22-49fe-bedf-8713ad34b82f",
+            "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "xpathTag",
+                "type": "String",
+                "value": "\u0022button\u0022"
+              },
+              {
+                "key": "xpathImage",
+                "type": "Image",
+                "value": "\u0022e26a990f-8d5f-49c5-aa2a-07ca009dab76\u0022"
+              },
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "xpath",
+                "type": "String",
+                "value": "\u0022/html/body/app-root/div[1]/div/div/div[2]/div/button\u0022"
+              },
+              {
+                "key": "interaction",
+                "type": "String",
+                "value": "\u0022click\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          },
+          {
+            "name": "Close Browser",
+            "type": "BrowserClose",
+            "version": "1.0.2",
+            "actionId": "21a9c5cc-8a5d-4e42-92c0-bcbe24ac1cab",
+            "actionDefinitionActionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "browserAlias",
+                "type": "String",
+                "value": "\u0022a\u0022"
+              },
+              {
+                "key": "timeout",
+                "type": "Number",
+                "value": "30000"
+              },
+              {
+                "key": "continueWithoutWait",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "errorOnTimeout",
+                "type": "Boolean",
+                "value": "false"
+              },
+              {
+                "key": "failOnError",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "2e9ef445-a070-4105-b253-2bb84a6ce1e7",
+    "name": "paste password\u0026Vision\u0026OCR"
+  }
+}

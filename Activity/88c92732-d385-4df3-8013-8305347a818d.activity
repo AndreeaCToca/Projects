@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "id": "88c92732-d385-4df3-8013-8305347a818d",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-09T09:15:20Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "Python",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Set Variable",
+        "type": "VariableSetV2",
+        "version": "1.1.2",
+        "actionId": "7167321a-5209-422c-b1f5-c29ba4555fcc",
+        "actionDefinitionActionId": "32b3480c-118e-42ce-99dd-1c25aa93d742",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "variable",
+            "type": "String",
+            "value": "\u0022Versions\u0022"
+          },
+          {
+            "key": "variableType",
+            "type": "String",
+            "value": "\u0022Array\u0022"
+          },
+          {
+            "key": "delimeter",
+            "type": "String",
+            "value": "\u0022,\u0022"
+          },
+          {
+            "key": "data",
+            "type": "String",
+            "value": "\u00221.0.0,1.0.1,1.0.3,1.0.2\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "redacted",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [
+          {
+            "actionId": "7167321a-5209-422c-b1f5-c29ba4555fcc",
+            "actionResult": "7167321a-5209-422c-b1f5-c29ba4555fcc:Versions",
+            "variableName": "Versions",
+            "type": "Array"
+          }
+        ],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Python",
+        "type": "ExecutePythonScript",
+        "version": "1.0.6",
+        "actionId": "0d8a7140-06fe-4c9c-95e0-77ca1ea3c9ca",
+        "actionDefinitionActionId": "269d731f-0848-4d97-adb7-c64ac01cad48",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "command-chip",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "inputParams",
+            "type": "Array",
+            "value": "[{\u0022key\u0022:\u0022Versions\u0022,\u0022type\u0022:\u0022Array\u0022,\u0022value\u0022:\u0022$$Versions$$\u0022}]"
+          },
+          {
+            "key": "command",
+            "type": "String",
+            "value": "\u0022def compare_versions(version1, version2):\\r\\n    v1_parts = version1.split(\u0027.\u0027)\\r\\n    v2_parts = version2.split(\u0027.\u0027)\\r\\n    for i in range(3):\\r\\n        if int(v1_parts[i]) \u003C int(v2_parts[i]):\\r\\n            return -1\\r\\n        elif int(v1_parts[i]) \u003E int(v2_parts[i]):\\r\\n            return 1\\r\\n    return 0\\r\\ndef highest_semantic_version(versions):\\r\\n    \\\u0022\\\u0022\\\u0022\\r\\n    Function to find the highest semantic version from a list of versions.\\r\\n    \\\u0022\\\u0022\\\u0022\\r\\n    if not versions:\\r\\n        return None\\r\\n    highest_version = versions[0]\\r\\n    for version in versions[1:]:\\r\\n        if compare_versions(version, highest_version) == 1:\\r\\n            highest_version = version\\r\\n    return highest_version\\r\\nversions = list(context[\\\u0022Versions\\\u0022])\\r\\nprint(highest_semantic_version(versions))\u0022"
+          },
+          {
+            "key": "tempContext",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Set Variable",
+        "type": "VariableSetV2",
+        "version": "1.1.2",
+        "actionId": "0d2d61b9-2c08-49b0-89f6-80db700be7ec",
+        "actionDefinitionActionId": "32b3480c-118e-42ce-99dd-1c25aa93d742",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "variable",
+            "type": "String",
+            "value": "\u0022Highest\u0022"
+          },
+          {
+            "key": "variableType",
+            "type": "String",
+            "value": "\u0022String\u0022"
+          },
+          {
+            "key": "data",
+            "type": "String",
+            "value": "\u00221.0.3\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "redacted",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [
+          {
+            "actionId": "0d2d61b9-2c08-49b0-89f6-80db700be7ec",
+            "actionResult": "0d2d61b9-2c08-49b0-89f6-80db700be7ec:Highest",
+            "variableName": "Highest",
+            "type": "String"
+          }
+        ],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "If Then",
+        "type": "IfThen",
+        "version": "1.0.5",
+        "actionId": "56541072-4238-4f7f-8f21-ccbc8b7117a9",
+        "actionDefinitionActionId": "d291967a-fa10-4bb6-85a4-9d3fd01a9b03",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "expression",
+            "type": "String",
+            "value": "\u0022\\\u0022$$0d8a7140-06fe-4c9c-95e0-77ca1ea3c9ca:pythonResult$$\\\u0022!=\\\u0022$$Highest$$\\\u0022\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "-1"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Stop Execution",
+            "type": "StopExecution",
+            "version": "1.0.2",
+            "actionId": "8a1cecea-fb04-4c11-8657-f989c2020450",
+            "actionDefinitionActionId": "d0f4c62e-02c4-4e79-8bef-01c4775e5211",
+            "disabled": false,
+            "created": "0001-01-01T00:00:00Z",
+            "updated": "0001-01-01T00:00:00Z",
+            "isDeactivated": false,
+            "parameters": [
+              {
+                "key": "failAction",
+                "type": "Boolean",
+                "value": "true"
+              }
+            ],
+            "actions": [],
+            "context": [],
+            "tables": [],
+            "lists": [],
+            "variableMappings": [],
+            "variables": [],
+            "results": [],
+            "logs": [],
+            "status": 0,
+            "breakPoint": "None",
+            "datastoreReferences": []
+          }
+        ],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [
+      {
+        "actionId": "7167321a-5209-422c-b1f5-c29ba4555fcc",
+        "actionResult": "7167321a-5209-422c-b1f5-c29ba4555fcc:Versions",
+        "variableName": "Versions",
+        "type": "Array"
+      },
+      {
+        "actionId": "0d2d61b9-2c08-49b0-89f6-80db700be7ec",
+        "actionResult": "0d2d61b9-2c08-49b0-89f6-80db700be7ec:Highest",
+        "variableName": "Highest",
+        "type": "String"
+      }
+    ],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Stateless",
+    "migratedToBotUuid": false,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "88c92732-d385-4df3-8013-8305347a818d",
+    "name": "Python"
+  }
+}

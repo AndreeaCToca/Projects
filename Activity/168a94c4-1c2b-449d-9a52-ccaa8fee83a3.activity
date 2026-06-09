@@ -1,0 +1,576 @@
+{
+  "metadata": {
+    "id": "168a94c4-1c2b-449d-9a52-ccaa8fee83a3",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-08T13:56:17Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "Vision\u0026OCR",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [
+      "alias:bot-Beta-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Open Browser",
+        "type": "BrowserCombo",
+        "version": "1.0.5",
+        "actionId": "66f9299b-94b6-41d0-afd8-f98a1b44c880",
+        "actionDefinitionActionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserType",
+            "type": "String",
+            "value": "\u0022Chrome\u0022"
+          },
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://www.imdb.com/search/title/?title_type=feature\u0026genres=horror\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022google\u0022"
+          },
+          {
+            "key": "maximize",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "extension",
+            "type": "String",
+            "value": "\u0022\u0022"
+          },
+          {
+            "key": "alertManagement",
+            "type": "String",
+            "value": "\u0022accept\u0022"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Image Search",
+        "type": "ImageSearch",
+        "version": "1.0.6",
+        "actionId": "29f58c78-2ad4-4212-b9e2-108687239eb2",
+        "actionDefinitionActionId": "9cdd96ce-6264-4733-8c9a-6277729df3d9",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "imageBox",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:1254,\u0022y\u0022:711,\u0022w\u0022:481,\u0022h\u0022:301}"
+          },
+          {
+            "key": "image",
+            "type": "Image",
+            "value": "\u0022ae6afa4c-8d7d-4e05-a905-7fbeab8e451a\u0022"
+          },
+          {
+            "key": "region",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:1454,\u0022y\u0022:842,\u0022w\u0022:152,\u0022h\u0022:80}"
+          },
+          {
+            "key": "colorMatch",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "templateThreshold",
+            "type": "Number",
+            "value": "0.9"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Image to Text",
+        "type": "ImageToText",
+        "version": "1.0.1",
+        "actionId": "9c6f2ec3-014b-48d3-a1cf-cfc650fd5639",
+        "actionDefinitionActionId": "ec113ce4-2dbf-422c-ba7f-111691f8bf35",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "imageBox",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:307,\u0022y\u0022:204,\u0022w\u0022:584,\u0022h\u0022:100}"
+          },
+          {
+            "key": "image",
+            "type": "Image",
+            "value": "\u0022fc238192-279d-4961-9d09-92ef19b00270\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "language",
+            "type": "String",
+            "value": "\u0022eng\u0022"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "thresholding",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "medianBlur",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "bigger",
+            "type": "Number",
+            "value": "1"
+          },
+          {
+            "key": "digits",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "OCR Text Click",
+        "type": "OcrTextClick",
+        "version": "1.0.5",
+        "actionId": "5bbd3832-74a6-44ff-bcf0-0d433be2a20b",
+        "actionDefinitionActionId": "9881901f-153f-40d4-809a-10231eb29e29",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "textToFind",
+            "type": "String",
+            "value": "\u0022Expand all\u0022"
+          },
+          {
+            "key": "clickType",
+            "type": "String",
+            "value": "\u0022Left\u0022"
+          },
+          {
+            "key": "region",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:528,\u0022y\u0022:355,\u0022w\u0022:380,\u0022h\u0022:163}"
+          },
+          {
+            "key": "language",
+            "type": "String",
+            "value": "\u0022eng\u0022"
+          },
+          {
+            "key": "occurence",
+            "type": "Number",
+            "value": "1"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "thresholding",
+            "type": "String",
+            "value": "\u00220\u0022"
+          },
+          {
+            "key": "invert",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "medianBlur",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "bigger",
+            "type": "Number",
+            "value": "2"
+          },
+          {
+            "key": "digits",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Image Click",
+        "type": "ImageClick",
+        "version": "1.0.10",
+        "actionId": "da1321a9-61fb-4e82-89fc-4e1d42a2a365",
+        "actionDefinitionActionId": "7c8485d8-788b-4c9c-b60d-81df1715dc80",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "image",
+            "type": "Image",
+            "value": "\u0022fdce4b1e-7eab-4c82-b61b-3ebc3ff1b423\u0022"
+          },
+          {
+            "key": "imageBox",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:1465,\u0022y\u0022:867,\u0022w\u0022:105,\u0022h\u0022:37}"
+          },
+          {
+            "key": "regionArea",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:1230,\u0022y\u0022:744,\u0022w\u0022:467,\u0022h\u0022:282}"
+          },
+          {
+            "key": "clickType",
+            "type": "String",
+            "value": "\u0022Left\u0022"
+          },
+          {
+            "key": "colorMatch",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "templateThreshold",
+            "type": "Number",
+            "value": "0.9"
+          },
+          {
+            "key": "delay",
+            "type": "Number",
+            "value": "0"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Delay",
+        "type": "Delay",
+        "version": "1.0.1",
+        "actionId": "85910491-9dc6-47ff-8463-ff1da2911a72",
+        "actionDefinitionActionId": "4afc0589-d3bf-49d3-80e3-240be2146dcf",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "delay",
+            "type": "Number",
+            "value": "3000"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "OCR Grid to Table",
+        "type": "OcrTableV2",
+        "version": "2.0.1",
+        "actionId": "be2adc7f-a158-4075-a079-4c264e18a756",
+        "actionDefinitionActionId": "351598bf-78c7-4a14-aaef-c622f6481602",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "grid",
+            "type": "Grid",
+            "value": "{\u0022position\u0022:{\u0022x\u0022:767,\u0022y\u0022:487},\u0022gridArray\u0022:[{\u0022key\u0022:\u0022(0, 0)\u0022,\u0022column\u0022:0,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:0,\u0022y\u0022:0,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(1, 0)\u0022,\u0022column\u0022:1,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:265,\u0022y\u0022:0,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(2, 0)\u0022,\u0022column\u0022:2,\u0022row\u0022:0,\u0022cellBox\u0022:{\u0022x\u0022:530,\u0022y\u0022:0,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(0, 1)\u0022,\u0022column\u0022:0,\u0022row\u0022:1,\u0022cellBox\u0022:{\u0022x\u0022:0,\u0022y\u0022:169,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(1, 1)\u0022,\u0022column\u0022:1,\u0022row\u0022:1,\u0022cellBox\u0022:{\u0022x\u0022:265,\u0022y\u0022:169,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(2, 1)\u0022,\u0022column\u0022:2,\u0022row\u0022:1,\u0022cellBox\u0022:{\u0022x\u0022:530,\u0022y\u0022:169,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(0, 2)\u0022,\u0022column\u0022:0,\u0022row\u0022:2,\u0022cellBox\u0022:{\u0022x\u0022:0,\u0022y\u0022:338,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(1, 2)\u0022,\u0022column\u0022:1,\u0022row\u0022:2,\u0022cellBox\u0022:{\u0022x\u0022:265,\u0022y\u0022:338,\u0022w\u0022:265,\u0022h\u0022:169}},{\u0022key\u0022:\u0022(2, 2)\u0022,\u0022column\u0022:2,\u0022row\u0022:2,\u0022cellBox\u0022:{\u0022x\u0022:530,\u0022y\u0022:338,\u0022w\u0022:265,\u0022h\u0022:169}}]}"
+          },
+          {
+            "key": "headerRow",
+            "type": "String",
+            "value": "\u00220\u0022"
+          },
+          {
+            "key": "region",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:755,\u0022y\u0022:463,\u0022w\u0022:849,\u0022h\u0022:552}"
+          },
+          {
+            "key": "colorMatch",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "thresholding",
+            "type": "String",
+            "value": "\u00220\u0022"
+          },
+          {
+            "key": "invert",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "medianBlur",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "bigger",
+            "type": "Number",
+            "value": "2"
+          },
+          {
+            "key": "digits",
+            "type": "Boolean",
+            "value": "false"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Close Browser",
+        "type": "BrowserClose",
+        "version": "1.0.2",
+        "actionId": "a996a133-6629-4f0d-b497-0416896c3a46",
+        "actionDefinitionActionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022google\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "168a94c4-1c2b-449d-9a52-ccaa8fee83a3",
+    "name": "Vision\u0026OCR"
+  }
+}

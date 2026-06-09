@@ -1,4 +1,445 @@
 {
   "version": 1,
-  "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272"
+  "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+  "resources": [
+    {
+      "type": "GitActivityResource",
+      "id": "095efb51-0f73-42ae-bf21-8f5a6c99dfc7",
+      "path": "Activity/095efb51-0f73-42ae-bf21-8f5a6c99dfc7.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+            "name": "Open Browser",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "c3d5158b-8d43-4f60-837f-2db80bb346c6",
+            "name": "Selenium",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "61d8d4ac-bf9c-415c-8009-6245c6289505",
+            "name": "Manipulate Browser Window",
+            "version": "1.0.2"
+          },
+          {
+            "definitionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "name": "Get Web Element",
+            "version": "1.0.6"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "168a94c4-1c2b-449d-9a52-ccaa8fee83a3",
+      "path": "Activity/168a94c4-1c2b-449d-9a52-ccaa8fee83a3.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+            "name": "Open Browser",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "9cdd96ce-6264-4733-8c9a-6277729df3d9",
+            "name": "Image Search",
+            "version": "1.0.6"
+          },
+          {
+            "definitionId": "ec113ce4-2dbf-422c-ba7f-111691f8bf35",
+            "name": "Image to Text",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "9881901f-153f-40d4-809a-10231eb29e29",
+            "name": "OCR Text Click",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "7c8485d8-788b-4c9c-b60d-81df1715dc80",
+            "name": "Image Click",
+            "version": "1.0.10"
+          },
+          {
+            "definitionId": "4afc0589-d3bf-49d3-80e3-240be2146dcf",
+            "name": "Delay",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "351598bf-78c7-4a14-aaef-c622f6481602",
+            "name": "OCR Grid to Table",
+            "version": "2.0.1"
+          },
+          {
+            "definitionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+            "name": "Close Browser",
+            "version": "1.0.2"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "2e9ef445-a070-4105-b253-2bb84a6ce1e7",
+      "path": "Activity/2e9ef445-a070-4105-b253-2bb84a6ce1e7.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+            "name": "Group",
+            "version": "1.1.0"
+          },
+          {
+            "definitionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+            "name": "Open Browser",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "name": "Get Web Element",
+            "version": "1.0.6"
+          },
+          {
+            "definitionId": "6b0b0fd2-3324-4e1b-81c9-084f3445ae42",
+            "name": "Paste Password",
+            "version": "1.0.2"
+          },
+          {
+            "definitionId": "2e6086d8-1d33-443f-b344-eb4eed5b71da",
+            "name": "Clipboard Paste",
+            "version": "1.0.3"
+          },
+          {
+            "definitionId": "e820f69e-2a2f-427c-9099-4ed1381a78fe",
+            "name": "Image Change",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "1b9e376f-31c5-4c33-8f0a-fc121d8db414",
+            "name": "Image Do While",
+            "version": "1.0.6"
+          },
+          {
+            "definitionId": "4afc0589-d3bf-49d3-80e3-240be2146dcf",
+            "name": "Delay",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "3a48ed45-d7a7-4945-87ee-939f082c2e1c",
+            "name": "Image Compare",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "2e723326-52b3-4bd4-9caa-ed165142a394",
+            "name": "If Then",
+            "version": "1.0.4"
+          },
+          {
+            "definitionId": "d0f4c62e-02c4-4e79-8bef-01c4775e5211",
+            "name": "Stop Execution",
+            "version": "1.0.2"
+          },
+          {
+            "definitionId": "df80e649-388c-40d2-b186-128521bc7352",
+            "name": "Image Grid",
+            "version": "1.0.11"
+          },
+          {
+            "definitionId": "fb707467-e3b5-44da-a74f-3b6ca383791c",
+            "name": "Debug Value",
+            "version": "1.0.2"
+          },
+          {
+            "definitionId": "d6c4d224-1693-4846-b4f2-b3f1cb1a3591",
+            "name": "OCR Grid",
+            "version": "1.0.13"
+          },
+          {
+            "definitionId": "68ab6c6d-f09e-417c-a1d2-6530c5a270ce",
+            "name": "OCR Do While",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+            "name": "Close Browser",
+            "version": "1.0.2"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "570b5aa6-d8f5-456a-a29f-4b15855a50d5",
+      "path": "Activity/570b5aa6-d8f5-456a-a29f-4b15855a50d5.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "bbbe54ee-9973-4bb0-9942-dbfabc08a4d8",
+            "name": "Download File",
+            "version": "2.0.2"
+          },
+          {
+            "definitionId": "8dd7036e-7721-458f-ad15-c17b02c8d43a",
+            "name": "Merge PDF",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "dcab55f9-e24b-4d82-9164-c2a7dc51284f",
+            "name": "Extract Text From PDF",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+            "name": "Delete File",
+            "version": "1.0.1"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "6137c801-24f8-4525-ac13-1538cab4b6aa",
+      "path": "Activity/6137c801-24f8-4525-ac13-1538cab4b6aa.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+            "name": "Open Browser",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "1e5bdeed-5b17-4f60-8541-b21a7ef2caf6",
+            "name": "Go to URL in Browser",
+            "version": "1.0.3"
+          },
+          {
+            "definitionId": "01ea1fa1-1910-4498-a153-6ee186e4dc18",
+            "name": "Go Forward or Back in Browser",
+            "version": "1.0.3"
+          },
+          {
+            "definitionId": "61d8d4ac-bf9c-415c-8009-6245c6289505",
+            "name": "Manipulate Browser Window",
+            "version": "1.0.2"
+          },
+          {
+            "definitionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "name": "Get Web Element",
+            "version": "1.0.6"
+          },
+          {
+            "definitionId": "d38eb528-d9d5-44b1-9f87-f25fb77fe791",
+            "name": "Get Web Element Property",
+            "version": "0.0.3"
+          },
+          {
+            "definitionId": "a4b4eb3e-a46d-4cdb-9bbb-e2d7564ba581",
+            "name": "Focus Browser",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "f14ff0cc-5492-4dbd-bf92-b1528fefda2d",
+            "name": "Find Repeating Elements",
+            "version": "1.0.3"
+          },
+          {
+            "definitionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+            "name": "Close Browser",
+            "version": "1.0.2"
+          },
+          {
+            "definitionId": "7fb51f17-a365-43ce-82a7-5d3e54b21b58",
+            "name": "Repeating Elements to Table",
+            "version": "2.0.2"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "71f3ba94-8ff5-4104-9859-69beca3a0d60",
+      "path": "Activity/71f3ba94-8ff5-4104-9859-69beca3a0d60.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "9db45d98-d1bd-4617-a3eb-525a681980b6",
+            "name": "Group",
+            "version": "1.1.0"
+          },
+          {
+            "definitionId": "2f6cfe20-76ef-4e2e-bacc-fc2e6433ea5a",
+            "name": "Table to XLSX/CSV",
+            "version": "2.1.0"
+          },
+          {
+            "definitionId": "ed5231bf-8210-438e-9bf9-527ea5035a96",
+            "name": "Get Info of CSV/XLSX",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "b000e8ae-2042-4a09-b4fb-14521844bbf9",
+            "name": "XLSX/CSV to Table",
+            "version": "2.0.4"
+          },
+          {
+            "definitionId": "e7d8d414-cfa8-4557-80c9-615dfa0747e3",
+            "name": "Delete File",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "c1448ccd-7722-4dab-babc-657a8b4563c3",
+            "name": "Set Datastore Variable",
+            "version": "2.1.4"
+          },
+          {
+            "definitionId": "32b3480c-118e-42ce-99dd-1c25aa93d742",
+            "name": "Set Variable",
+            "version": "1.1.2"
+          },
+          {
+            "definitionId": "bbbe54ee-9973-4bb0-9942-dbfabc08a4d8",
+            "name": "Download File",
+            "version": "2.0.2"
+          },
+          {
+            "definitionId": "c25c5818-1ba4-4e2d-a38d-040ee1d30bca",
+            "name": "File Conversion",
+            "version": "1.0.1"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "88c92732-d385-4df3-8013-8305347a818d",
+      "path": "Activity/88c92732-d385-4df3-8013-8305347a818d.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "32b3480c-118e-42ce-99dd-1c25aa93d742",
+            "name": "Set Variable",
+            "version": "1.1.2"
+          },
+          {
+            "definitionId": "269d731f-0848-4d97-adb7-c64ac01cad48",
+            "name": "Python",
+            "version": "1.0.6"
+          },
+          {
+            "definitionId": "d291967a-fa10-4bb6-85a4-9d3fd01a9b03",
+            "name": "If Then",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "d0f4c62e-02c4-4e79-8bef-01c4775e5211",
+            "name": "Stop Execution",
+            "version": "1.0.2"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitActivityResource",
+      "id": "d3233289-c632-441d-870b-29af341e0c8d",
+      "path": "Activity/d3233289-c632-441d-870b-29af341e0c8d.activity",
+      "dependencies": {
+        "actionDetails": [
+          {
+            "definitionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+            "name": "Open Browser",
+            "version": "1.0.5"
+          },
+          {
+            "definitionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+            "name": "Get Web Element",
+            "version": "1.0.6"
+          },
+          {
+            "definitionId": "c660177e-0151-490f-a6ef-c1d70c75e631",
+            "name": "Add to Clipboard",
+            "version": "1.0.4"
+          },
+          {
+            "definitionId": "9904434f-a211-4a74-a8d1-d2e803aff339",
+            "name": "Clipboard Copy",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "2e6086d8-1d33-443f-b344-eb4eed5b71da",
+            "name": "Clipboard Paste",
+            "version": "1.0.3"
+          },
+          {
+            "definitionId": "13ddd324-7f52-4e1d-bfcb-158da9a96207",
+            "name": "Clipboard Cut",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "cd6c5894-563f-43d5-8c37-46538616de1a",
+            "name": "Save Clipboard to Variable",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "c439c3c9-03e4-43e2-904f-8e4abf846b8d",
+            "name": "Clear Clipboard",
+            "version": "1.0.1"
+          },
+          {
+            "definitionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+            "name": "Close Browser",
+            "version": "1.0.2"
+          }
+        ],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitProjectResource",
+      "id": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+      "path": "Project/fc3e2e91-0691-47b2-b4a3-f7dfec3ff704.project",
+      "dependencies": {
+        "actionDetails": [],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitWorkflowResource",
+      "id": "67940dcb-ab50-400b-b461-c6a7d7b2f0de",
+      "path": "Workflow/67940dcb-ab50-400b-b461-c6a7d7b2f0de.workflow",
+      "dependencies": {
+        "actionDetails": [],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    },
+    {
+      "type": "GitWorkspaceResource",
+      "id": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+      "path": "08de2dd8-3346-40aa-89a9-d5d2969de272.workspace",
+      "dependencies": {
+        "actionDetails": [],
+        "componentDetails": [],
+        "appActionsDetails": []
+      }
+    }
+  ],
+  "environmentMappings": []
 }

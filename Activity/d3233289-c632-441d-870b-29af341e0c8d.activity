@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "id": "d3233289-c632-441d-870b-29af341e0c8d",
+    "platformVersion": "10.0.0",
+    "createdAt": "2024-08-08T09:55:29Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "fc3e2e91-0691-47b2-b4a3-f7dfec3ff704",
+    "description": "Clipboard",
+    "associatedUserId": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "botIds": [
+      "alias:bot-Beta-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Open Browser",
+        "type": "BrowserCombo",
+        "version": "1.0.5",
+        "actionId": "bcc7c4de-f685-461a-90db-569dc3f5bc83",
+        "actionDefinitionActionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserType",
+            "type": "String",
+            "value": "\u0022Chrome\u0022"
+          },
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://google.com\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "maximize",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "extension",
+            "type": "String",
+            "value": "\u0022\u0022"
+          },
+          {
+            "key": "alertManagement",
+            "type": "String",
+            "value": "\u0022accept\u0022"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Get Web Element",
+        "type": "GetWebElementsV2",
+        "version": "1.0.6",
+        "actionId": "695c3d22-f9a6-499d-9f88-ecdfbc583f63",
+        "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "xpathTag",
+            "type": "String",
+            "value": "\u0022button\u0022"
+          },
+          {
+            "key": "xpathImage",
+            "type": "Image",
+            "value": "\u0022aaa4bafa-970b-4e06-af13-5334cbfb9c60\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "xpath",
+            "type": "String",
+            "value": "\u0022/html/body/div[2]/div[2]/div[3]/span/div/div/div/div[3]/div[1]/button[1]\u0022"
+          },
+          {
+            "key": "interaction",
+            "type": "String",
+            "value": "\u0022click\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Get Web Element",
+        "type": "GetWebElementsV2",
+        "version": "1.0.6",
+        "actionId": "a95692d8-286f-4e78-b97f-7b1c6b3dcf63",
+        "actionDefinitionActionId": "1648e989-3a97-4776-82a1-4b8f493270d1",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "xpathTag",
+            "type": "String",
+            "value": "\u0022textarea\u0022"
+          },
+          {
+            "key": "xpathImage",
+            "type": "Image",
+            "value": "\u002215db6b7b-b10c-4837-b9ea-f27c3cc64d0c\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "xpath",
+            "type": "String",
+            "value": "\u0022/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea\u0022"
+          },
+          {
+            "key": "interaction",
+            "type": "String",
+            "value": "\u0022click\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Add to Clipboard",
+        "type": "ClipboardPut",
+        "version": "1.0.4",
+        "actionId": "6d260799-28a1-4f1c-906b-f688b0494ef1",
+        "actionDefinitionActionId": "c660177e-0151-490f-a6ef-c1d70c75e631",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "variableType",
+            "type": "String",
+            "value": "\u0022Text\u0022"
+          },
+          {
+            "key": "data",
+            "type": "String",
+            "value": "\u0022add text\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Clipboard Copy",
+        "type": "ClipboardCopy",
+        "version": "1.0.1",
+        "actionId": "86d2b4f3-96f4-437d-a699-b749cbb82c31",
+        "actionDefinitionActionId": "9904434f-a211-4a74-a8d1-d2e803aff339",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Clipboard Paste",
+        "type": "ClipboardPaste",
+        "version": "1.0.3",
+        "actionId": "3d700c55-1000-49ac-ad70-f462e5f5152c",
+        "actionDefinitionActionId": "2e6086d8-1d33-443f-b344-eb4eed5b71da",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "textToPaste",
+            "type": "String",
+            "value": "\u0022$$86d2b4f3-96f4-437d-a699-b749cbb82c31:rawData$$\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Add to Clipboard",
+        "type": "ClipboardPut",
+        "version": "1.0.4",
+        "actionId": "62475d07-b416-421c-87e8-75c9a8670549",
+        "actionDefinitionActionId": "c660177e-0151-490f-a6ef-c1d70c75e631",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "variableType",
+            "type": "String",
+            "value": "\u0022Text\u0022"
+          },
+          {
+            "key": "data",
+            "type": "String",
+            "value": "\u0022add text\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Clipboard Cut",
+        "type": "ClipboardCut",
+        "version": "1.0.1",
+        "actionId": "627b843d-7fd8-40a5-8080-0985d63d28a2",
+        "actionDefinitionActionId": "13ddd324-7f52-4e1d-bfcb-158da9a96207",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Clipboard Paste",
+        "type": "ClipboardPaste",
+        "version": "1.0.3",
+        "actionId": "2cf28dc2-ebfa-419d-b9cb-5fb213c0d68b",
+        "actionDefinitionActionId": "2e6086d8-1d33-443f-b344-eb4eed5b71da",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "textToPaste",
+            "type": "String",
+            "value": "\u0022$$86d2b4f3-96f4-437d-a699-b749cbb82c31:rawData$$\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Save Clipboard to Variable",
+        "type": "ClipboardGet",
+        "version": "1.0.1",
+        "actionId": "e8af32eb-7423-4d5e-aace-495f1db0bdd6",
+        "actionDefinitionActionId": "cd6c5894-563f-43d5-8c37-46538616de1a",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "objectType",
+            "type": "String",
+            "value": "\u0022text\u0022"
+          },
+          {
+            "key": "variableName",
+            "type": "String",
+            "value": "\u0022test\u0022"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [
+          {
+            "actionId": "e8af32eb-7423-4d5e-aace-495f1db0bdd6",
+            "actionResult": "e8af32eb-7423-4d5e-aace-495f1db0bdd6:variableName",
+            "variableName": "test",
+            "type": "String"
+          }
+        ],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Clear Clipboard",
+        "type": "ClipboardEmpty",
+        "version": "1.0.1",
+        "actionId": "1592eace-0591-41f8-963a-f271b14ce294",
+        "actionDefinitionActionId": "c439c3c9-03e4-43e2-904f-8e4abf846b8d",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      },
+      {
+        "name": "Close Browser",
+        "type": "BrowserClose",
+        "version": "1.0.2",
+        "actionId": "c0b08505-ae0c-4a32-b47e-29d82faa314a",
+        "actionDefinitionActionId": "0d947388-14f6-4af5-af16-0db65d8fccac",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None",
+        "datastoreReferences": []
+      }
+    ],
+    "variableMappings": [
+      {
+        "actionId": "e8af32eb-7423-4d5e-aace-495f1db0bdd6",
+        "actionResult": "e8af32eb-7423-4d5e-aace-495f1db0bdd6:variableName",
+        "variableName": "test",
+        "type": "String"
+      }
+    ],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "d3233289-c632-441d-870b-29af341e0c8d",
+    "name": "Clipboard"
+  }
+}

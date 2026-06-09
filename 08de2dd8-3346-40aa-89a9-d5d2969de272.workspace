@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "id": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "platformVersion": "10.0.0",
+    "createdAt": "2025-11-27T17:12:52Z",
+    "createdBy": "7cfce2b3-0d5d-4455-926e-7d022d5630ee",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "id": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "accent": "#2B31D3",
+    "route": "python-sidecar-upgrade",
+    "description": "https://dev.azure.com/tocabot/TocaGenesis/_workitems/edit/23433 ",
+    "cmsEnabled": true,
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "name": "Python sidecar upgrade Workspace"
+  }
+}
