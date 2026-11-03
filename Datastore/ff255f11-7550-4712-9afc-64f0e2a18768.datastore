@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "id": "ff255f11-7550-4712-9afc-64f0e2a18768",
+    "platformVersion": "10.0.0",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "uuid": "ff255f11-7550-4712-9afc-64f0e2a18768",
+    "description": "ss",
+    "datastoreType": "Internal",
+    "datastoreParameters": [
+      {
+        "datastoreId": "ff255f11-7550-4712-9afc-64f0e2a18768",
+        "uuid": "01a1a11f-ceb1-7470-848d-63598afc2155",
+        "key": "fileDrive",
+        "type": "FilesLocator",
+        "value": "{\u0022type\u0022:\u0022ObjectStore\u0022}"
+      }
+    ],
+    "tables": [],
+    "tableMigrations": [],
+    "workspaceId": "08de2dd8-3346-40aa-89a9-d5d2969de272",
+    "resourceId": "ff255f11-7550-4712-9afc-64f0e2a18768",
+    "name": "new"
+  }
+}
