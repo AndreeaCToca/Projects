@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "id": "c79258b6-799d-4cf3-aa47-daa273474c7b",
+    "platformVersion": "10.0.0",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "c79258b6-799d-4cf3-aa47-daa273474c7b",
+    "description": "test",
+    "deactivated": false,
+    "actionGroups": [],
+    "workspaceId": "6d5e2567-ff7d-4ad3-9c98-84843a8a0c75",
+    "resourceId": "c79258b6-799d-4cf3-aa47-daa273474c7b",
+    "name": "test"
+  }
+}

@@ -407,5 +407,14 @@
       "dependencies": {}
     }
   ],
-  "environmentMappings": []
+  "environmentMappings": [
+    {
+      "resourceType": "Bot",
+      "aliasKey": "bot-Nightly-Bot-0001",
+      "aliasValue": "alias:bot-Nightly-Bot-0001",
+      "referencedByResourceIds": [
+        "1fa805dd-28d5-44de-a5e2-aa9b39aadcf0"
+      ]
+    }
+  ]
 }

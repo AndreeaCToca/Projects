@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "id": "1fa805dd-28d5-44de-a5e2-aa9b39aadcf0",
+    "platformVersion": "10.0.0",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "projectId": "c79258b6-799d-4cf3-aa47-daa273474c7b",
+    "description": "sS",
+    "botIds": [
+      "alias:bot-Nightly-Bot-0001"
+    ],
+    "version": 1,
+    "actions": [
+      {
+        "name": "Open Browser",
+        "type": "BrowserCombo",
+        "version": "1.0.5",
+        "originId": "ab7eaad2-9fd8-574c-b787-ec160074260c",
+        "actionId": "2e91ebd9-a59f-4f4f-a728-06eac6844d6f",
+        "actionDefinitionActionId": "8166ba31-6b9c-4838-a5a9-acf679684e62",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "browserType",
+            "type": "String",
+            "value": "\u0022Chrome\u0022"
+          },
+          {
+            "key": "url",
+            "type": "String",
+            "value": "\u0022https://google.com\u0022"
+          },
+          {
+            "key": "browserAlias",
+            "type": "String",
+            "value": "\u0022a\u0022"
+          },
+          {
+            "key": "maximize",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "focusBrowser",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "continueWithoutWait",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "extension",
+            "type": "String",
+            "value": "\u0022\u0022"
+          },
+          {
+            "key": "alertManagement",
+            "type": "String",
+            "value": "\u0022accept\u0022"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None"
+      },
+      {
+        "name": "Image Search",
+        "type": "ImageSearch",
+        "version": "1.0.6",
+        "originId": "5799964b-449e-5f30-b85a-78614d31ca9e",
+        "actionId": "f1bb9d0b-103e-4e44-94fe-c6887d55361e",
+        "actionDefinitionActionId": "9cdd96ce-6264-4733-8c9a-6277729df3d9",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "imageBox",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:747,\u0022y\u0022:226,\u0022w\u0022:439,\u0022h\u0022:52}"
+          },
+          {
+            "key": "image",
+            "type": "Image",
+            "value": "\u002201a1aaf0-14ce-76d4-b914-48eac8f02575\u0022"
+          },
+          {
+            "key": "region",
+            "type": "BoundingBox",
+            "value": "{\u0022x\u0022:717,\u0022y\u0022:192,\u0022w\u0022:629,\u0022h\u0022:447}"
+          },
+          {
+            "key": "colorMatch",
+            "type": "Boolean",
+            "value": "false"
+          },
+          {
+            "key": "timeout",
+            "type": "Number",
+            "value": "30000"
+          },
+          {
+            "key": "errorOnTimeout",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          },
+          {
+            "key": "templateThreshold",
+            "type": "Number",
+            "value": "0.9"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None"
+      }
+    ],
+    "variableMappings": [],
+    "outputMappings": [],
+    "metaData": [],
+    "deleted": false,
+    "activityServiceType": "Gui",
+    "migratedToBotUuid": false,
+    "workspaceId": "6d5e2567-ff7d-4ad3-9c98-84843a8a0c75",
+    "resourceId": "1fa805dd-28d5-44de-a5e2-aa9b39aadcf0",
+    "name": "test"
+  }
+}
