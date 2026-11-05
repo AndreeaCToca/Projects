@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "id": "6d5e2567-ff7d-4ad3-9c98-84843a8a0c75",
+    "platformVersion": "10.0.0",
+    "schemaVersion": "1.0.0"
+  },
+  "content": {
+    "id": "6d5e2567-ff7d-4ad3-9c98-84843a8a0c75",
+    "accent": "#f09d1b",
+    "route": "versioningtest",
+    "description": "test",
+    "cmsEnabled": false,
+    "versioning": true,
+    "workspaceId": "6d5e2567-ff7d-4ad3-9c98-84843a8a0c75",
+    "resourceId": "6d5e2567-ff7d-4ad3-9c98-84843a8a0c75",
+    "name": "versioningTest"
+  }
+}
