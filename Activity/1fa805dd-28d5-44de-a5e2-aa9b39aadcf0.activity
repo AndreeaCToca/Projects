@@ -154,6 +154,40 @@
         "logs": [],
         "status": 0,
         "breakPoint": "None"
+      },
+      {
+        "name": "Delay",
+        "type": "Delay",
+        "version": "1.0.1",
+        "originId": "f36d9bfd-bccd-553d-b9a3-e634d9ecba37",
+        "actionId": "e047bd10-6b5f-4e5c-82f6-0c5ef28a545c",
+        "actionDefinitionActionId": "4afc0589-d3bf-49d3-80e3-240be2146dcf",
+        "disabled": false,
+        "created": "0001-01-01T00:00:00Z",
+        "updated": "0001-01-01T00:00:00Z",
+        "isDeactivated": false,
+        "parameters": [
+          {
+            "key": "delay",
+            "type": "Number",
+            "value": "4"
+          },
+          {
+            "key": "failOnError",
+            "type": "Boolean",
+            "value": "true"
+          }
+        ],
+        "actions": [],
+        "context": [],
+        "tables": [],
+        "lists": [],
+        "variableMappings": [],
+        "variables": [],
+        "results": [],
+        "logs": [],
+        "status": 0,
+        "breakPoint": "None"
       }
     ],
     "variableMappings": [],
